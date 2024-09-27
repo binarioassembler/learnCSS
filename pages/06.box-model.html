@@ -26,8 +26,94 @@
       <header class="header-subtitle">
         <h2>Modelo de caja</h2>
       </header>
+      <div class="content-container">
+        <div class="example-container">
+          <div class="wrapp" id="box1">
+            <div class="box-margin">
+              <span>Margin</span>
+              <div class="box-border">
+                <span>Border</span>
+                <div class="box-padding">
+                  <span>Padding</span>
+                  <div class="box-content">
+                    <span>Contenido</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="content-subcontainer">
-        <p>Hola mundo</p>
+        <p>Partes del modelo de caja:</p>
+        <ul>
+          <li><strong>Contenido:</strong> es el contenido de la caja, puede contener texto o imágenes.</li>
+          <li><strong>Padding:</strong> limpia un área alrededor del contenido y es transparente.</li>
+          <li><strong>Border:</strong> es el borde de toda la caja (rodea el padding y el contenido).</li>
+          <li><strong>Margin:</strong> es la sepración de un elemento con otro, es transparente.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2>Width/Height de un elemento</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Para configurar el ancho y alto de un elemnto con CSS, solo se configura el ancho y alto del <strong>área del contenido</strong>.</p>
+        <p>Los bordes y relleno se irán sumando al contenedor aumentando su ancho y alto de la caja.</p>
+      </div>
+      <div class="content-container">
+        <div class="example-container">
+          <div class="wrapp" id="box2">
+            <div class="card">
+              <div class="img-card">
+                <img src="../src/img/anime.avif" alt="Anime Online">
+              </div>
+              <div class="text-card">
+                <p>El anime es un estilo de animación originario de Japón que ha ganado popularidad en todo el mundo por su amplia variedad
+                de géneros y estilos artísticos. Se caracteriza por sus personajes expresivos, tramas complejas y una mezcla de influencias culturales japonesas y occidentales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-subcontainer">
+        <p>El cálculo de la tarjeta seria el siguiente:</p>
+        <p class="content-containertext">Anchura</p>
+        <ul>
+          <li>320px (ancho del área de contenido)</li>
+          <li>20px (padding izquierdo y derecho)</li>
+          <li>10px (border izquierdo y derecho)</li>
+          <li><strong>350px (ancho total)</strong></li>
+        </ul>
+        <p class="content-containertext">Altura</p>
+        <ul>
+          <li>50px (alto del área de contenido)</li>
+          <li>20px (padding superior e inferior)</li>
+          <li>10px (border superior e inferior)</li>
+          <li><strong>80px (alto total)</strong></li>
+        </ul>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2>Ejercicio</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Realiza un banner informativo, y agrega un texto principal donde mantenga las cuatro partes de un modelo de caja (padding, margin, border y contenido).</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Resultado:</p>
+        <div class="example-container">
+          <div class="wrapp" id="box3">
+            <div class="content-uefa">
+              <h3>UEFA Canal de Medios</h3>
+              <p>The UEFA media channel is a restricted-access UEFA platform for media, covering all UEFA competitions, events and
+              activities. Content includes videos, photos, media releases, match documents, regulations, contact list, event guides and a calendar tool for media opportunities.</p>
+              <a href="#">Leer más ➡</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="subcontainer">
@@ -38,7 +124,7 @@
         <div class="links-container">
           <a class="link-theme link-left" href="./05.width-height.html">Width/Height en CSS</a><br>
           <a class="link-theme" href="../index.html"><i>🏠</i></a><br>
-          <a class="link-theme link-right" href=".">Próximamente</a>
+          <a class="link-theme link-right" href="#">Outline en CSS</a>
         </div>
       </div>
     </section>

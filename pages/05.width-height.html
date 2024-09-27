@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Width/Height en CSS</title>
+  <link rel="stylesheet" href="../src/05width-height.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header-container">
+  <div class="wrapper">
+    <h1 class="header-title">Width/Height en CSS</h1>
+    <p class="header-text">Las propiedades (<code class="header-text">height</code>), (<code class="header-text">width</code>) y (<code class="header-text">max-width</code>) en CCS establecen la altura, ancho y ancho máximo de un elemento.</p>
+  </div>
+</header>
+<main class="main-container">
+  <div class="wrapper">
+    <section class="subcontainer">
+      <header class="subtitle">
+        <h2>Introducción</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Las propiedades de <code>height</code>, <code>width</code> y <code>max-width</code> son fundamentales para el diseño de páginas web responsivas y bien estructuradas. Controlar las dimensiones de los elementos te permite crear interfaces de usuario que no solo son visualmente atractivas, sino también funcionales en diferentes dispositivos. Es importante experimentar con estos valores y comprender cómo afectan al comportamiento de tus elementos dentro de la página. Al dominar estas propiedades, tendrás una base sólida para crear diseños web efectivos y adaptables.</p>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="subtitle">
+        <h2>Ejemplo 1</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Crea un &lt;div&gt; que tenga una anchura del 50% de su contenedor padre y una altura de 150 píxeles. Cambia el color de fondo para que sea visible.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Resultado:</p>
+        <div class="example-container">
+          <div class="wrapp" id="tab1">
+            <div id="contain">
+              <div class="top-box">
+                <div class="wrapper-box">
+                  <span>🟡🔴🔵</span> <input type="text">
+                </div>
+              </div>
+              <div class="bottom-box">
+                <div class="wrapper-icon">
+                  <span class="dev">DEV</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="subtitle">
+        <h2>Ejemplo 2</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Diseña una tarjeta que tenga una anchura fija de 300 píxeles, pero con una anchura máxima del 100% para que pueda adaptarse a pantallas más pequeñas. Dale un fondo y un borde para que resalte.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Resultado:</p>
+        <div class="example-container">
+          <div class="wrapp" id="tab2">
+            <article class="card">
+              <div class="data">
+                <div class="data-wrapp">
+                  <div class="wrapp-score">
+                    <img class="img-data" src="../src/img/avll.png" alt="Aston Villa">
+                    <p><span class="mini-data">Participaciones</span><br> <strong class="big-data">40</strong></p>
+                    <p><span class="mini-data">Goles</span><br> <strong class="big-data">09</strong></p>
+                    <p><span class="mini-data">Asistencias</span><br> <strong class="big-data">0</strong></p>
+                    <p><span class="mini-data">Disparos</span><br> <strong class="big-data">37</strong></p>
+                  </div>
+                </div>
+              </div>
+              <footer class="data-footer">
+                <a href="https://www.premierleague.com/players/134048/Jhon-Dur%C3%A1n/overview" target="_blank"><p><span class="mini-name">Jhon</span><br><strong class="big-name">Durán</strong><br><span class="mini-data">Delantero</span></p></a><div class="profile-container">
+                  <img src="../src/img/col.png" alt=""> <span class="mini-data">Colombia</span>
+                  <a href="https://www.premierleague.com/players/134048/Jhon-Dur%C3%A1n/overview" target="_blank">Ver perfil ➡</a>
+                </div>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="subtitle">
+        <h2>Ejemplo 3</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Haz una imagen que ocupe el 80% del contenedor padre, pero que nunca exceda los 400 píxeles de anchura. Asegúrate de que la altura se ajuste proporcionalmente.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Resultado:</p>
+        <div class="example-container">
+          <div class="wrapp" id="tab3">
+            <div class="banner-container">
+              <img class="cartel" src="../src/img/ucl-banner.png" alt="UEFA Champions League" title="UEFA Champion League">
+              <p class="cartel-text">Empieza este <datetime>Martes 03/10/2024</datetime></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2>Seguir aprendiendo</h2>
+      </header>
+      <div class="content-container" id="example-link">
+        <div class="links-container">
+          <a class="link-theme link-left" href="./04.padding.html">Padding en CSS</a><br>
+          <a class="link-theme" href="../index.html"><i>🏠</i></a><br>
+          <a class="link-theme link-right" href="./06.box-model.html">Box Model en CSS</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="footer-container">
+  <h4>Hecho con ❤ por BinarioAssembler &copy;</h4>
+</footer>
+</body>
+</html>

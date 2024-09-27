@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border CSS - Ejercicios</title>
+  <link rel="stylesheet" href="../src/02border.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header-container">
+    <div class="wrapper">
+      <h1 class="header-title">Border CSS - Ejercicios</h1>
+      <p class="header-text">Las propiedades de borde en CSS permiten especificar el estilo, ancho y color del borde del
+        elemento. Practica con la propiedad 'border' con las siguientes propiedades:</p>
+    </div>
+  </header>
+  <main class="main-container">
+    <div class="wrapper">
+      <section class="subcontainer">
+        <header class="header-subtitle">
+          <h2>border-style</h2>
+          <p>Muestra todos los tipos de bordes con la propiedad <code>border-style</code>.</p>
+        </header>
+        <div class="content-container">
+          <p class="content-containertext">Resultado:</p>
+          <div class="example-container">
+            <div class="container-style" id="b-solid">
+              <p class="text-style">Estilo de borde sólido.</p>
+            </div>
+            <div class="container-style" id="b-dotted">
+              <p class="text-style">Estilo de borde dotted.</p>
+            </div>
+            <div class="container-style" id="b-dashed">
+              <p class="text-style">Estilo de borde dashed.</p>
+            </div>
+            <div class="container-style" id="b-double">
+              <p class="text-style">Estilo de borde double.</p>
+            </div>
+            <div class="container-style" id="b-groove">
+              <p class="text-style">Estilo de borde groove.</p>
+            </div>
+            <div class="container-style" id="b-ridge">
+              <p class="text-style">Estilo de borde ridge.</p>
+            </div>
+            <div class="container-style" id="b-inset">
+              <p class="text-style">Estilo de borde inset.</p>
+            </div>
+            <div class="container-style" id="b-outset">
+              <p class="text-style">Estilo de borde outset.</p>
+            </div>
+            <div class="container-style" id="b-none">
+              <p class="text-style">Estilo de borde none.</p>
+            </div>
+            <div class="container-style" id="b-hidden">
+              <p class="text-style">Estilo de borde hidden.</p>
+            </div>
+            <div class="container-style" id="b-mixto">
+              <p class="text-style">Estilo de borde mixto.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subcontainer">
+        <header class="header-subtitle">
+          <h2>border-image</h2>
+          <p>La propiedad <code>border-image</code> en CSS permite utilizar una imagen como borde de un elemento en lugar de los bordes sólidos de color tradicionales. Esta propiedad te da flexibilidad para crear bordes más complejos y personalizables.</p>
+          <p>La propiedad <code>border-image</code> es una propiedad abreviada que combina las siguientes subpropiedades:</p>
+          <ul>
+            <li><strong><code>border-image-source:</code></strong> Define la fuente de la imagen que se usará para el borde.</li>
+            <li><strong><code>border-image-slice:</code></strong> Indica cómo dividir la imagen en nueve secciones (cuatro esquinas, cuatro lados y el centro) para adaptarla al tamaño del borde.</li>
+            <li><strong><code>border-image-width:</code></strong> Especifica el grosor del borde basado en la imagen.</li>
+            <li><strong><code>border-image-outset:</code></strong> Define cuánto sobresale el borde fuera del área del borde del elemento.</li>
+            <li><strong><code>border-image-repeat:</code></strong> Especifica cómo se repiten (o ajustan) las secciones de la imagen a lo largo de los bordes.</li>
+          </ul>
+        </header>
+        <div class="content-container" id="example-pretty">
+          <p class="content-containertext">Resultados:</p>
+          <div class="example-container">
+            <div class="pretty-container">
+              <div class="pretty-content">
+                <img class="pretty-img" id="bg-img1" src="../src/img/cr7.png" alt="El bicho">
+                <div class="content-prettytext">
+                  <p class="pretty-text"><strong>Nombre completo:</strong> Cristiano Ronaldo dos Santos Aveiro</p>
+                  <p class="pretty-text"><strong>Fecha de nacimiento:</strong> <datetime>05/02/1985</datetime></p>
+                  <p class="pretty-text"><strong>Club:</strong> Al-Nassr F.C.</p>
+                  <p class="pretty-text"><strong>Posición:</strong> Delantero Extremo</p>
+                </div>
+              </div>
+            </div>
+            <div class="pretty-container">
+              <div class="pretty-content">
+                <img class="pretty-img" id="bg-img2" src="../src/img/rc5.png" alt="El bicho">
+                <div class="content-prettytext">
+                  <p class="pretty-text"><strong>Nombre completo:</strong> Jorge Aldair Rivadeneyra Cabello</p>
+                  <p class="pretty-text"><strong>Fecha de nacimiento:</strong> <datetime>05/02/1995</datetime></p>
+                  <p class="pretty-text"><strong>Club:</strong> Sporting Cristal</p>
+                  <p class="pretty-text"><strong>Posición:</strong> Delantero Extremo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subcontainer">
+        <header class="header-subtitle">
+          <h2>Seguir aprendiendo</h2>
+        </header>
+        <div class="content-container" id="example-link">
+          <div class="links-container">
+            <a class="link-theme link-left" href="./01fondos.html">Background en CSS</a><br> <a class="link-theme" href="../index.html"><i>🏠</i></a><br> <a class="link-theme link-right" href="./03.margin.html">Margin en CSS</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer-container">
+    <h4>Hecho con ❤ por BinarioAssembler &copy;</h4>
+  </footer>
+</body>
+</html>

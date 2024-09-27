@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padding en CSS</title>
+  <link rel="stylesheet" href="../src/04padding.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header-container">
+<div class="wrapper">
+  <h1 class="header-title">Padding en CSS</h1>
+  <p class="header-text">El padding es el relleno o espacio alrededor del contenido de un elemento, dentro de cualquier borde definido.</p>
+</div>
+</header>
+<main class="main-container">
+  <div class="wrapper">
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2>Ejemplo 1</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Crea un contenedor donde tenga 3 elementos un encabezado, un botón y una imágen y agrégale padding al contendor de 40px arriba y a los lados. Sus elementos deben estar alineados al centro.</p>
+        <p>Debes darle estilo al botón y que te redirija a otra página web.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Resultado:</p>
+        <div class="example-container">
+          <div class="wrapp" id="exam1">
+            <h4 class="text-banner">¿Deseas instalar el juego a tu PC?</h4>
+            <a class="btn-banner" href="https://supercell.com/en/games/clashroyale/" target="_blank">EMPEZAR A JUGAR</a>
+            <div class="container-imgbanner">
+              <img class="img-banner" src="../src/img/pekka.webp" alt="Mini pekka">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subcontainer">
+        <h2>Ejemplo 2</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Realiza una card, con información estadística de algún deporte que te gusta. Por ejemplo de un jugador de fútbol cuántos goles hizo en la temporada y adjunta una imágen del deportista en la card; la imágen debe estar centrada dentro de su contendor.</p>
+        <p>Agrega un padding de 20px arriba y a sus lados, excepto abajo.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Resultado:</p>
+        <div class="wrapp" id="exam2">
+          <article class="card">
+            <header class="header-card">
+              <div class="text-card">
+                <p>GOLES</p>
+              </div>
+              <div class="img-card">
+                <a href="#"><img class="image" src="../src/img/mbappe.png" alt="Killiam Mbappé"></a>
+              </div>
+            </header>
+            <div class="statistics-card">
+              <table>
+                <tbody>
+                  <tr id="excelent">
+                    <td class="data-c excelent-c">01</td>
+                    <td class="data-c"><img src="../src/img/escudo.png" alt="Escudo del equipo"></td>
+                    <td class="excelent-c">MBAPPÉ</td>
+                    <td class="data-c excelent-c">18</td>
+                  </tr>
+                  <tr id="data-even">
+                    <td class="data-c">02</td>
+                    <td class="data-c"><img src="../src/img/escudo.png" alt="Escudo del equipo"></td>
+                    <td>RAPHINHA</td>
+                    <td class="data-c">13</td>
+                  </tr>
+                  <tr>
+                    <td class="data-c">03</td>
+                    <td class="data-c"><img src="../src/img/escudo.png" alt="Escudo del equipo"></td>
+                    <td>LEWANDOWSKI</td>
+                    <td class="data-c">10</td>
+                  </tr>
+                  <tr id="data-even">
+                    <td class="data-c">04</td>
+                    <td class="data-c"><img src="../src/img/escudo.png" alt="Escudo del equipo"></td>
+                    <td>A. MOLEIRO</td>
+                    <td class="data-c">09</td>
+                  </tr>
+                  <tr>
+                    <td class="data-c">05</td>
+                    <td class="data-c"><img src="../src/img/escudo.png" alt="Escudo del equipo"></td>
+                    <td>VINICIUS JR.</td>
+                    <td class="data-c">09</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <footer class="footer-card">
+              <div class="wrapp-btn">
+                <a href="#" class="link-card">Ver todos los goleadores ▶</a>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2>Seguir aprendiendo</h2>
+      </header>
+      <div class="content-container" id="example-link">
+        <div class="links-container">
+          <a class="link-theme link-left" href="./03.margin.html">Margin en CSS</a><br>
+          <a class="link-theme" href="../index.html"><i>🏠</i></a><br>
+          <a class="link-theme link-right" href="./05.width-height.html">Width/Height en CSS</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="footer-container">
+  <h4>Hecho con ❤ por BinarioAssembler &copy;</h4>
+</footer>
+</body>
+</html>

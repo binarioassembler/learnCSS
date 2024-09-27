@@ -1,0 +1,447 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #ffffff;
+  /* fondos o textos en fondos oscuros */
+  --color-secundary: #0E2A47;
+  /* Títulos, párrafos y bordes */
+  --color-tertiary: #1B1464;
+  /* para palabras claves, botones y fondos */
+  --color-quaternary: #00FFE5;
+  /* botones */
+  --color-quinary: #EC008C;
+  /* enlaces y botones */
+  --color-alt: #f0f3f4;
+  /* alternativo */
+}
+
+header.header-container,
+main.main-container,
+footer.footer-container {
+  width: 100%;
+  /*border: 1px solid red;*/
+}
+
+header.header-container,
+footer.footer-container {
+  background-color: var(--color-tertiary);
+}
+
+footer.footer-container {
+  text-align: center;
+}
+
+h1.header-title,
+h4.footer-title {
+  color: var(--color-quinary);
+}
+
+p.header-text,
+a.header-link {
+  color: var(--color-quaternary);
+}
+
+ul.header-list>li {
+  color: var(--color-primary);
+}
+
+a.header-link {
+  text-decoration: none;
+}
+
+a.header-link:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 80%;
+  min-width: 360px;
+  margin: 0 auto;
+  /*border: 1px solid green;*/
+  padding: 20px 40px;
+}
+
+body {
+  font-family: "Overpass Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-secundary);
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5,
+h6 {
+  font-size: 20px;
+}
+
+p,
+a,
+li {
+  font-size: 18px;
+}
+
+ol>li,
+ul>li {
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+main>div.wrapper>section {
+  background-color: transparent;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed var(--color-alt);
+  height: auto;
+  padding-bottom: 20px;
+}
+
+section>header.header-subtitle,
+section>div.example-container,
+section>div.example-container2,
+section>div.example-container3,
+section>div.example {
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+section>div.example-container {
+  background-color: var(--color-quaternary);
+  border-radius: 5px;
+}
+
+/*section > header.header-subtitle {
+  background-color: orange;
+}
+
+section > div.example-container {
+  background-color: bisque;
+  border: 1px solid blue;
+}*/
+details,
+div.container-content1,
+div.container-content2,
+div.container-content3,
+div.container-content4 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper-content1,
+.wrapper-content2 {
+  width: 100%;
+  margin: 10px auto;
+  padding: 40px;
+}
+
+
+/* 1. background-color */
+details {
+  background-color: #f7f9f9;
+}
+
+details>ol {
+  padding: 10px 20px;
+}
+
+summary {
+  background-color: var(--color-secundary);
+  color: #fff;
+  padding: 20px;
+}
+
+ul,
+ol {
+  padding: 20px 0;
+}
+
+details>ol>li {
+  color: var(--color-secundary);
+}
+
+/* 2. background-image */
+div.container-content1 {
+  border: 1px solid var(--color-alt);
+  background-image: url(https://marketplace.canva.com/EAFsX1qBBys/1/0/1600w/canva-fondo-virtual-para-zoom-figuras-abstractas-org%C3%A1nico-rosa-NmcFlhJ1GXY.jpg);
+  background-position: right top;
+  opacity: .9;
+}
+
+div.container-content1>div.wrapper-content1>h3.title-content1 {
+  color: var(--color-quinary);
+  border-bottom: 10px solid var(--color-quinary);
+}
+
+div.container-content1>div.wrapper-content1>ul.ul-content1 {
+  list-style: none;
+  margin-left: -40px;
+}
+
+div.container-content1>div.wrapper-content1>ul.ul-content1>li.li-content1 {
+  color: var(--color-tertiary);
+  font-weight: 700;
+}
+
+/* 3. background-repeat */
+p.text-content2,
+p.text-content3,
+p.text-content4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+div.container-content2,
+div.container-content3,
+div.container-content4 {
+  opacity: .9;
+}
+
+div.container-content2 {
+  background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-vintage-chinese-style-banner-picture-image_1097050.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+div.container-content2>div.wrapper-content2>p.text-content2 {
+  font-weight: 700;
+  color: var(--color-tertiary);
+  font-size: 20px;
+}
+
+div.container-content3 {
+  background-image: url('https://www.color-hex.com/palettes/14115.png');
+  background-repeat: repeat-x;
+}
+
+div.container-content3>div.wrapper-content2>p.text-content3 {
+  color: var(--color-quinary);
+}
+
+div.container-content4 {
+  background-image: url('https://images.vexels.com/media/users/3/148176/isolated/preview/da19cde350f69c20b064ecefca315d52-resumen-de-vectores-de-fondo-splash.png');
+  background-repeat: repeat-y;
+}
+
+div.container-content4>div.wrapper-content2>p.text-content4 {
+  color: var(--color-quinary);
+}
+
+/* background-attachment */
+section>div.example-container2,
+section>div.example-container3,
+section>div.example {
+  border-radius: 5px;
+}
+
+section>div.example-container2,
+section>div.example-container3 {
+  background-color: var(--color-secundary);
+}
+
+section>div.example-container2 {
+  background-image: url('https://img.itch.zone/aW1hZ2UvNTA4MzgwLzMwNTM5ODcuZ2lm/original/CWCy9m.gif');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+section>div.example-container3 {
+  background-image: url('https://miin-cosmetics.com/blog/wp-content/uploads/horizontal.gif');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-attachment: scroll;
+}
+
+.wrapper-content3,
+.wrapper-content4 {
+  background-color: transparent;
+  opacity: .8;
+  max-width: 60%;
+  min-width: 50%;
+  height: auto;
+  padding: 20px;
+}
+
+.wrapper-content3>h3.title-content5,
+.wrapper-content4>h3.title-content5 {
+  color: var(--color-quinary);
+  font-weight: 700;
+
+}
+
+.wrapper-content3>h3.title-content5,
+.wrapper-content4>h3.title-content5 {
+  font-size: 22px;
+}
+
+.wrapper-content3>p.text-content5,
+.wrapper-content4>p.text-content5 {
+  font-size: 14px;
+  color: var(--color-quaternary);
+  font-weight: 700;
+}
+
+/* background-clip */
+div.example {
+  background-color: transparent;
+  height: auto;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#bg-clip-test {
+  background-color: var(--color-alt);
+  height: auto;
+  background-position: center left;
+  border: 1px solid var(--color-secundary);
+}
+
+.wrapper-bgclip {
+  background-clip: border-box;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper-bgclip2 {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/444/132/1014/anime-boys-jujutsu-kaisen-monochrome-satoru-gojo-shonen-jump-hd-wallpaper-preview.jpg');
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-position: center center;
+  width: 90%;
+  height: 300px;
+  margin: 10px auto;
+  border: 1px solid var(--color-quinary);
+}
+
+.wrapper-bgclip3 {
+  width: 100%;
+  height: 250px;
+  background-clip: content-box;
+  background-image: url('https://png.pngtree.com/background/20210709/original/pngtree-simple-character-financial-business-picture-image_935328.jpg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.wrapper-bgclip4 {
+  background-clip: text;
+}
+
+.wrapper-bgclip>p {
+  font-size: 16px;
+}
+
+.img1-bgclip {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* background-origin */
+div.container-origin {
+  border: 4px solid transparent;
+  background-color: var(--color-quaternary);
+  background-image: url('https://static.vecteezy.com/system/resources/previews/000/280/920/original/vector-abstract-pastel-geometric-background.jpg');
+  color: var(--color-tertiary);
+  padding: 20px;
+  background-repeat: no-repeat;
+  /*background-position: left top;*/
+  background-size: cover;
+  border-radius: 5px;
+}
+
+div.container-origin>p {
+  font-size: 16px;
+}
+
+#bgorigin1 {
+  background-origin: border-box;
+}
+
+#bgorigin2 {
+  background-origin: padding-box;
+}
+
+#bgorigin3 {
+  background-origin: content-box;
+}
+
+/* background-size */
+div.container-size {
+  border: 2px solid var(--color-quaternary);
+}
+
+div.wrapper-bgsize {
+  background-color: transparent;
+  max-width: 90%;
+  min-width: 50%;
+  margin: 0 auto;
+}
+
+div.wrapper-bgsize>#cover,
+div.wrapper-bgsize>#contain {
+  width: 100%;
+  background-color: var(--color-quaternary);
+}
+
+#cover {
+  background-image: url('https://wallpapers-clan.com/wp-content/uploads/2024/07/deadpool-vs-wolverine-yellow-background-desktop-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+#contain {
+  background-image: url('https://i.pinimg.com/originals/bf/e9/f4/bfe9f47c71a7eb89d008476353e1d1e9.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+div.wrapper-bgsize>#cover:hover,
+div.wrapper-bgsize>#contain:hover {
+  opacity: .8;
+  transition: all ease-in .5s;
+}
+
+#cover>a.link-cover,
+#contain>a.link-cover {
+  width: 100%;
+  height: 300px;
+  display: block;
+  text-align: right;
+}

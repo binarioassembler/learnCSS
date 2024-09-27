@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background CSS - Ejercicios</title>
+  <link rel="stylesheet" href="../src/01fondos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header-container">
+    <div class="wrapper">
+      <h1 class="header-title">Background CSS - Ejercicios</h1>
+      <p class="header-text">Practicar la propiedad <code>background</code> con las siguientes propiedades:</p>
+      <ul class="header-list">
+        <li><a class="header-link" href="#bg-color">background-color</a></li>
+        <li><a class="header-link" href="#bg-image">background-image</a></li>
+        <li><a class="header-link" href="#bg-repeat">background-repeat</a></li>
+        <li><a class="header-link" href="#bg-attachment">background-attachment</a></li>
+        <li><a class="header-link" href="#bg-attachment">background-position</a></li>
+        <li><a class="header-link" href="#bg-clip">background-clip</a></li>
+        <li><a class="header-link" href="#bg-origin">background-origin</a></li>
+        <li><a class="header-link" href="#bg-size">background-size</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="main-container">
+    <div class="wrapper">
+      <section>
+        <header class="header-subtitle">
+          <h2 id="bg-color">background-color</h2>
+          <p>En este ejemplo damos estilos al elemento <code>&lt;details&gt;</code> y agregaremos estilo de fondo, al
+            final debe parecerse a un acordión.</p>
+        </header>
+        <div class="example-container">
+          <details>
+            <summary>Aprendiendo Las propiedades de background en CSS</summary>
+            <ol>
+              <li>background-color</li>
+              <li>background-image</li>
+              <li>background-repeat</li>
+              <li>background-attachment</li>
+              <li>background-position</li>
+              <li>background-clip</li>
+              <li>background-origin</li>
+              <li>background-size</li>
+            </ol>
+          </details>
+        </div>
+      </section>
+      <section>
+        <header class="header-subtitle">
+          <h2 id="bg-image">background-image</h2>
+          <p>Agregar una imágen como fondo de un contendor <code>&lt;div&gt;</code> y trata de centrarlo y agregar texto
+            a su contenido.</p>
+        </header>
+        <div class="example-container">
+          <div class="container-content1">
+            <div class="wrapper-content1">
+              <h3 class="title-content1">Nuevos cursos en oferta</h3>
+              <ul class="ul-content1">
+                <li class="li-content1">HTML</li>
+                <li class="li-content1">CSS</li>
+                <li class="li-content1">JavaScript</li>
+                <li class="li-content1">PHP</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header class="header-subtitle">
+          <h2 id="bg-repeat">background-repeat</h2>
+          <p>Mostrar los diversos valores de la propiedad <code>background-repeat</code> en distintos contenedores.</p>
+        </header>
+        <div class="example-container">
+          <div class="container-content2">
+            <div class="wrapper-content2">
+              <p class="text-content2">no-repeat: Este valor evita que la imagen de fondo se repita, es decir, se
+                muestra solo una vez, sin repetirse ni horizontal ni verticalmente.</p>
+            </div>
+          </div>
+          <div class="container-content3">
+            <div class="wrapper-content2">
+              <p class="text-content3">repeat-x: Este valor hace que la imagen de fondo solo se repita en el eje
+                horizontal (de izquierda a derecha), pero no en el vertical.</p>
+            </div>
+          </div>
+          <div class="container-content4">
+            <div class="wrapper-content2">
+              <p class="text-content4">repeat-y: Al contrario de repeat-x, este valor hace que la imagen se repita solo
+                en el eje vertical (de arriba hacia abajo), pero no en el eje horizontal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header class="header-subtitle">
+          <h2 id="bg-attachment">background-attachment</h2>
+          <ol>
+            <li>Crear una banner increíble pero que tenga una animación gif de fondo y que este se encuentre fijo al
+              hacer scroll al contenido, debes hacerlo con la propiedad <code>background-attachment: fixed</code>.</li>
+            <li>Otro banner donde la imágen haga scroll hasta donde está el contenido, para ello se debe usar la
+              propiedad <code>background-attachment: scroll.</code></li>
+          </ol>
+        </header>
+        <div class="example-container2">
+          <div class="wrapper-content3">
+            <h3 class="title-content5">El Misterio y la Calma Bajo las Estrellas</h3>
+            <p class="text-content5">El bullicio del día desaparece, dejando un espacio para el misterio, la reflexión y
+              la calma. Es en la noche cuando muchas personas encuentran un refugio para sus pensamientos, donde las
+              luces tenues crean sombras que invitan a la imaginación. La naturaleza toma un respiro, y el tiempo parece
+              transcurrir de una manera más pausada, dando lugar a momentos únicos y personales.</p>
+          </div>
+        </div>
+        <div class="example-container3">
+          <div class="wrapper-content4">
+            <h3 class="title-content5">El Encanto de los Cerezos en Flor</h3>
+            <p class="text-content5">En Japón, esta floración, conocida como sakura, es un símbolo de renovación y de lo
+              efímero de la vida, recordando a las personas lo fugaz que puede ser la belleza y el paso del tiempo. La
+              tradición de observar estas flores, llamada hanami, invita a familias y amigos a reunirse bajo los cerezos
+              para disfrutar de su esplendor por unos pocos días antes de que las flores caigan y el ciclo comience de
+              nuevo.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header class="header-subtitle">
+          <h2 id="bg-clip">background-clip</h2>
+          <p>Realizar cuatro fondos de distintos contenedores, con las siguientes propiedades:</p>
+          <ul>
+            <li><code>border-box</code></li>
+            <li><code>padding-box</code></li>
+            <li><code>content-box</code></li>
+            <li><code>text-box</code></li>
+          </ul>
+        </header>
+        <div class="example" id="bg-clip-test">
+          <div class="wrapper-bgclip">
+            <p>Si hay un término de marketing que se haya hecho popular en los últimos años, ese es, sin duda, “post”. Y
+              es que los posts se han convertido en una herramienta muy importante para las estrategias de marketing de
+              cualquier empresa: por eso es esencial que no solo sepas qué son, sino también cómo crearlos para que sean
+              atractivos, convincentes y útiles.</p>
+          </div>
+        </div>
+        <p><strong>border-box:</strong> el fondo se extiende hasta el borde exterior del borde del elemento (incluye el
+          borde).</p>
+        <div class="example" id="bg-clip-test">
+          <div class="wrapper-bgclip2"></div>
+        </div>
+        <p><strong>padding-box:</strong> El fondo se extiende hasta el borde exterior del padding, sin incluir el borde.
+        </p>
+        <div class="example" id="bg-clip-test">
+          <div class="wrapper-bgclip3"></div>
+        </div>
+        <p><strong>content-box:</strong> El fondo solo se extiende hasta el borde del contenido, sin incluir el padding
+          ni el borde.</p>
+        <div class="example" id="bg-clip-test">
+          <p class="wrapper-bgclip4">Si hay un término de marketing que se haya hecho popular en los últimos años, ese
+            es, sin duda, “post”. Y es que los posts se han convertido en una herramienta muy importante para las
+            estrategias de marketing de cualquier empresa: por eso es esencial que no solo sepas qué son, sino también
+            cómo crearlos para que sean atractivos, convincentes y útiles.</p>
+        </div>
+        <p><strong>text:</strong> (solo en -webkit y -moz) Aplica el fondo solo al área de texto, útil para efectos con
+          texto.</p>
+      </section>
+      <section>
+        <header class="header-subtitle">
+          <h2 id="bg-origin">background-origin</h2>
+          <p>Realizar ejemplos de fondos, con las siguientes propiedades:</p>
+          <ul>
+            <li>border-box</li>
+            <li>padding-box</li>
+            <li>content-box</li>
+          </ul>
+          <div class="example container-origin" id="bgorigin1">
+            <p>Estos títulos son perfectos cuando hablas de una novedad anual (por ejemplo, el cartel de los festivales
+              de música) o también de algo que ya no cambia en todo el año (por ejemplo, las fechas de la escuela
+              oficial de idiomas), porque le comunican al lector que la información es completa, es decir, que tiene en
+              un solo post todos los datos que necesita conocer. Por ejemplo: "Ayudas a emprendedores: Guía completa
+              2022".</p>
+          </div>
+          <p><strong>border-box:</strong> El origen de la imagen de fondo comienza desde el borde del elemento.</p>
+          <div class="example container-origin" id="bgorigin2">
+            <p>Estos títulos son perfectos cuando hablas de una novedad anual (por ejemplo, el cartel de los festivales
+              de música) o también de algo que ya no cambia en todo el año (por ejemplo, las fechas de la escuela
+              oficial de idiomas), porque le comunican al lector que la información es completa, es decir, que tiene en
+              un solo post todos los datos que necesita conocer. Por ejemplo: "Ayudas a emprendedores: Guía completa
+              2022".</p>
+          </div>
+          <p><strong>padding-box:</strong> El origen de la imagen de fondo comienza desde el borde del padding.</p>
+          <div class="example container-origin" id="bgorigin3">
+            <p>Estos títulos son perfectos cuando hablas de una novedad anual (por ejemplo, el cartel de los festivales
+              de música) o también de algo que ya no cambia en todo el año (por ejemplo, las fechas de la escuela
+              oficial de idiomas), porque le comunican al lector que la información es completa, es decir, que tiene en
+              un solo post todos los datos que necesita conocer. Por ejemplo: "Ayudas a emprendedores: Guía completa
+              2022".</p>
+          </div>
+          <p><strong>content-box:</strong> El origen de la imagen de fondo comienza desde el borde del contenido.</p>
+        </header>
+      </section>
+      <section>
+        <header class="header-subtitle">
+          <h2 id="bg-size">background-size</h2>
+          <p>Mostrar casos de uso, sobre la propiedad <code>background-size</code> en CSS.</p>
+        </header>
+        <div class="example container-size">
+          <div class="wrapper-bgsize">
+            <div id="cover"><a class="link-cover" href="https://styde.net/" target="_blank"></a></div>
+          </div>
+        </div>
+        <p><strong>cover:</strong> Escala la imagen para cubrir todo el contenedor, incluso si esto significa que partes
+          de la imagen se recorten.</p>
+        <div class="example container-size">
+          <div class="wrapper-bgsize">
+            <div id="contain"><a class="link-cover" href="https://styde.net/" target="_blank"></a></div>
+          </div>
+        </div>
+        <p><strong>contain:</strong> Escala la imagen para que quepa completamente dentro del contenedor, manteniendo su
+          proporción, pero sin recortes.</p>
+      </section>
+      <section>
+        <a href="./02border.html">Border CSS</a>
+      </section>
+    </div>
+  </main>
+  <footer class="footer-container">
+    <div class="wrapper">
+      <h4 class="footer-title">Hecho con ❤ por BinarioAssembler</h4>
+    </div>
+  </footer>
+</body>
+</html>

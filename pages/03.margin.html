@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margin en CSS</title>
+  <link rel="stylesheet" href="../src/03margin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header-container">
+    <div class="wrapper">
+      <h1 class="header-title">Margin CSS - Ejercicios</h1>
+      <p class="header-text">Los márgenes crean espacios alrededor de los elementos, fuera de los bordes definidos.</p>
+    </div>
+  </header>
+  <main class="main-container">
+    <div class="wrapper">
+      <section class="subcontainer">
+        <header class="header-subtitle">
+          <h2>Márgenes individuales</h2>
+          <p>CSS tiene propiedades para especificar el márgen de cada lado de un elemento HTML.</p>
+          <ul>
+            <li><code>margin-top</code></li>
+            <li><code>margin-right</code></li>
+            <li><code>margin-bottom</code></li>
+            <li><code>margin-left</code></li>
+          </ul>
+          <p>Todas las propiedades de margin pueden tener los siguientes valores:</p>
+          <ul>
+            <li><strong><code>auto:</code></strong> el navegador calcula el márgen automáticamente.</li>
+            <li><strong><code>lenght:</code></strong> especifica el márgen en px, pt, cm, etc.</li>
+            <li><strong><code>%</code></strong> especifica un márgen en % del ancho del elemento contenedor.</li>
+            <li><strong><code>inherit:</code></strong> especifica que el margen debe heredarse del elemento principal.</li>
+          </ul>
+        </header>
+        <div class="content-container">
+          <p class="content-containertext">Resultado:</p>
+          <div class="example-container">
+            <div class="wrapp" id="wrapper1">
+              <blockquote class="margin-cite" id="cite-cont1">“Cualquier idiota puede escribir un programa que una computadora entiende, los verdaderos programadores pueden escribir código que los humanos entienden.” – Martin Fowler</blockquote>
+              <blockquote class="margin-cite" id="cite-cont2">“Siempre escribe tu código como si la persona que lo fuera a mantener fuera un peligroso psicópata que sabe quien eres y donde vives”</blockquote>
+              <blockquote class="margin-cite" id="cite-cont3">“Para entender la recursividad hay que entender lo que es la recursividad ”</blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subcontainer">
+        <header class="header-subtitle">
+          <h2>Margin auto/collapse</h2>
+          <p>La propiedad auto se encarga de centrar horizontalmente el elemento dentro de su contenedor.</p>
+          <p>Este ocupará el ancho especificado y el espacio restante se dividirá en partes iguales entre los márgenes izquierdo y derecho.</p>
+          <p>El colapso de márgenes contraen los márgenes superior e inferior en uno solo se toma el valor mayor de uno de los dos márgenes. Esto no ocurre con los márgenes laterales (izquierda y derecha).</p>
+        </header>
+        <div class="content-container">
+          <p class="content-containertext">Resultado:</p>
+          <div class="example-container">
+            <div class="wrapp" id="wrapper2">
+              <article>
+                <div class="post-img">
+                  <a href="#"><img src="https://i.ytimg.com/vi/YD6W4FTq-Iw/maxresdefault.jpg" alt="Foto del Post"></a>
+                </div>
+                <div class="post-text">
+                  <h3><a href="#">¿Qué es CSS?</a></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error perspiciatis fuga officia consequatur deleniti ab ad doloribus et nemo excepturi at consequuntur aut est eos maxime fugit, dolore a. Reiciendis.</p>
+                </div>
+              </article>
+              <article>
+                <div class="post-img">
+                  <a href="#"><img src="https://i.ytimg.com/vi/H1Iw9zdduKE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLABqDzhXOMxKldfm8POdrYmtxtmLQ" alt="Foto del Post"></a>
+                </div>
+                <div class="post-text">
+                  <h3><a href="#">Nuevas etiquetas de HTML</a></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error perspiciatis fuga officia consequatur deleniti ab
+                    ad doloribus et nemo excepturi at consequuntur aut est eos maxime fugit, dolore a. Reiciendis.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subcontainer">
+        <header class="header-subtitle">
+          <h2>Seguir aprendiendo</h2>
+        </header>
+        <div class="content-container" id="example-link">
+          <div class="links-container">
+            <a class="link-theme link-left" href="./02border.html">Border en CSS</a><br>
+            <a class="link-theme" href="../index.html"><i>🏠</i></a><br>
+            <a class="link-theme link-right" href="./04.padding.html">Padding en CSS</a>
+          </div>
+        </div>
+      </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-container">
+    <h4>Hecho con ❤ por BinarioAssembler &copy;</h4>
+  </footer>
+</body>
+</html>

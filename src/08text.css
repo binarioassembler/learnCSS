@@ -371,7 +371,7 @@ div.cont {
   border: none;
   background-image: url('../src/img/astro.png');
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: Center left;
   background-attachment: fixed;
 }
 

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texto en CSS</title>
+  <link rel="stylesheet" href="../src/08text.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header-container">
+    <div class="wrapper">
+      <h1 class="header-title">Texto en CSS</h1>
+      <p class="header-text">CSS cuenta con muchas propiedades para formatear textos.</p>
+    </div>
+  </header>
+  <aside class="navigator">
+    <div class="wrapper-aside">
+      <details>
+        <summary>+ Contenido</summary>
+        <ol>
+          <li><a href="#txt-color">Color de texto</a></li>
+          <li><a href="#txt-align">text-align</a></li>
+          <li><a href="#txt-last">text-align-last</a></li>
+          <li><a href="#txt-direction">text-direction</a></li>
+          <li><a href="#txt-vertical">vertical-align</a></li>
+          <li><a href="#txt-decoration">text-decoration</a></li>
+          <li><a href="#txt-decoration-color">text-decoration-color</a></li>
+          <li><a href="#txt-decoration-style">text-decoration-style</a></li>
+          <li><a href="#txt-decoration-thickness">text-decoration-thickness</a></li>
+          <li><a href="#txt-decoration-short">text-decoration shorthand</a></li>
+          <li><a href="#txt-transform">text-transform</a></li>
+          <li><a href="#txt-indent">text-indent</a></li>
+          <li><a href="#ltr-spacing">letter-spacing</a></li>
+          <li><a href="#line-height">line-height</a></li>
+          <li><a href="#word-spacing">word-spacing</a></li>
+          <li><a href="#white-space">white-space</a></li>
+          <li><a href="#txt-shadow">text-shadow</a></li>
+        </ol>
+      </details>
+    </div>
+  </aside>
+<main class="main-container">
+  <div class="wrapper">
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-color">Color de texto</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>color</code> se usa para establecer el color del texto, los valores se pueden especificar mediante:</p>
+        <ul>
+          <li>Un nombre de color reconocido por CSS (red, blue, tomato, etc).</li>
+          <li>Un valor Hexadecimal (#FF0000).</li>
+          <li>Un valor RGB como rgb(255,0,0).</li>
+        </ul>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              h2 {
+                text-align: center;
+                text-transform: uppercase;
+                color: salmon;
+                background-color: lightblue;
+              }
+
+              p {
+                text-indent: 50px;
+                text-align: justify;
+                letter-spacing: 3px;
+              }
+
+              a {
+                text-decoration: none;
+                color: salmon;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp" id="box1">
+            <h2 class="title-box1">formato de texto</h2>
+            <p class="text-box1">Este texto tiene estilo con algunas de las propiedades de formato de texto. El encabezado utiliza las propiedades text-align, text-transform, color y background-color. El párrafo tiene sangría y alineación, y se especifica el espacio entre caracteres. Se ha eliminado el subrayado de este vínculo <a class="link-box1" href="#">"Pruébelo usted mismo"</a> en color.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-align">Text align</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>text-align</code> establece la alineación de un texto puede estar alineado a la izquierda, a la derecha, al centro o ser justificado.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p {
+                text-align: center;
+              }
+
+              p {
+                text-align: right;
+              }
+
+              p {
+                text-align: left;
+              }
+
+              p {
+                text-align: justify;
+                border: 1px solid gray;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp" id="box2">
+            <p style="text-align: center;">Texto alineado al centro</p>
+            <p style="text-align: left;">Texto alineado a la derecha</p>
+            <p style="text-align: right;">Texto alineado al izquierda</p>
+            <p style="text-align: justify; border: 1px solid gray">Soy un texto que se encuentra justificado, cada línea se estira para que ocupe el mismo ancho y así poder alcanzar los márgenes del contenedor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-last">text-align-last</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Esta propiedad especifica cómo alinear la útlima línea de un texto.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              .p1 {
+                text-align-last: right;
+              }
+
+              .p2 {
+                text-align-last: center;
+              }
+
+              .p3 {
+                text-align-last: justify;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <h3 style="color: var(--color-quinary)">text-align-last: right</h3>
+            <p style="text-align-last: right;">Los meta-datos contenidos dentro de atributos pueden ser inspeccionados con Reflection APIs. Puedes pensar en los Atributos de PHP como un lenguaje de configuración incrustado directamente en el código.</p>
+            <h3 style="color: var(--color-quinary)">text-align-last: center</h3>
+            <p style="text-align-last: center;">Los meta-datos contenidos dentro de atributos pueden ser inspeccionados con Reflection APIs. Puedes pensar en los Atributos de PHP como un lenguaje de configuración incrustado directamente en el código.</p>
+            <h3 style="color: var(--color-quinary)">text-align-last: justify</h3>
+            <p style="text-align-last: justify;">Los meta-datos contenidos dentro de atributos pueden ser inspeccionados con Reflection APIs. Puedes pensar en los Atributos de PHP como un lenguaje de configuración incrustado directamente en el código.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-direction">text-direction</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Para cambiar la dirección del texto de un elemento, podemos usar las propiedades <code>direction</code> y <code>unicode-bidi</code>.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              .p1 {
+                direction: rtl;
+                unicode-bidi: bidi-override;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapper">
+            <p>Este es un texto con una dirección por defecto.</p>
+            <p style="direction: rtl; unicode-bidi: bidi-override;">Esta es una dirección de texto de derecha a izquierda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-vertical">vertical-align</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>vertical-align</code> establece la alineación vertical de un elemento HTML.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              .img1 {
+                vertical-align: baseline;
+              }
+              .img2 {
+                vertical-align: text-top;
+              }
+              .img3 {
+                vertical-align: text-bottom;
+              }
+              .img4 {
+                vertical-align: sub;
+              }
+              .img5 {
+                vertical-align: super;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <h3 style="color:var(--color-quinary)">vertical-align: baseline</h3>
+            <p>Una <img style="vertical-align: baseline;" class="mini-img" src="../src/img/col.png" alt="Imágen bandera"> imagen con una alineación predeterminada.</p>
+            <h3 style="color:var(--color-quinary)">vertical-align: text-top</h3>
+            <p>Una <img style="vertical-align: text-top;" class="mini-img" src="../src/img/col.png" alt="Imágen bandera"> imagen con una alineación de texto en la parte superior.</p>
+            <h3 style="color:var(--color-quinary)">vertical-align: text-bottom</h3>
+            <p>Una <img style="vertical-align: text-bottom;" class="mini-img" src="../src/img/col.png" alt="Imágen bandera"> imagen con una alineación de texto en la parte inferior.</p>
+            <h3 style="color:var(--color-quinary)">vertical-align: sub</h3>
+            <p>Una <img style="vertical-align: sub;" class="mini-img" src="../src/img/col.png" alt="Imágen bandera"> imagen con una sub-alineación.</p>
+            <h3 style="color:var(--color-quinary)">vertical-align: super</h3>
+            <p>Una <img style="vertical-align: super;" class="mini-img" src="../src/img/col.png" alt="Imágen bandera"> imagen con una super alineación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-decoration">text-decoration</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>text-decoration-line</code> agrega una línea de decoración al texto. Puede realiza una serie de combinaciones con los valores de dicha propiedad.</p>
+        <p><small><strong>Nota:</strong> No se recomienda subrayar texto que no sea un enlace, ya que esto suele confundir al lector.</small></p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              h3 {
+                text-decoration: overline;
+              }
+
+              p {
+                text-decoration: line-through;
+              }
+
+              p {
+                text-decoration: underline;
+              }
+
+              p {
+                text-decoration: overline underline;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapper">
+            <h3 style="color: var(--color-quinary); text-decoration: overline;">Decoración de texto con líneas superpuestas</h3>
+            <p style="text-decoration: line-through;">Decoración de texto trazado.</p>
+            <p style="text-decoration: underline;"><strong>Decoración de texto subrayado</strong></p>
+            <p style="text-decoration: overline underline;">Decoración de texto subrayado y superpuesto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-decoration-color">text-decoration-color</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>text-decoration-color</code> es usado para establecer el color de línea.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              h3 {
+                text-decoration-color: pink;
+                text-decoration: overline;
+              }
+
+              .p1 {
+                text-decoration-color: tomato;
+                text-decoration: line-through;
+              }
+
+              .p2 {
+                text-decoration-color: lightblue;
+                text-decoration: underline;
+              }
+
+              .p3 {
+                text-decoration-color: tomato;
+                text-decoration: overline underline;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapper">
+            <h3 style="text-decoration: overline; text-decoration-color: var(--color-quinary);">Decoración de texto con líneas superpuestas</h3>
+            <p style="text-decoration: line-through; text-decoration-color: tomato;">Decoración de texto trazado.</p>
+            <p style="text-decoration: underline; text-decoration-color: var(--color-quaternary);"><strong>Decoración de texto subrayado</strong></p>
+            <p style="text-decoration: overline underline; text-decoration-color: tomato;">Decoración de texto subrayado y superpuesto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-decoration-style">text-decoration-style</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>text-decoration-style</code> se usa para establecer el estilo de la línea de decoración.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              h3.style1 {
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+              }
+
+              h3.style2 {
+                text-decoration-line: underline;
+                text-decoration-style: double;
+              }
+
+              h3.style3 {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+              }
+
+              h3.style4 {
+                text-decoration-line: underline;
+                text-decoration-style: dashed;
+              }
+
+              h3.style5 {
+                text-decoration-line: underline;
+                text-decoration-style: wavy;
+              }
+
+              h3.style6 {
+                text-decoration-line: underline;
+                text-decoration-style: wavy;
+                text-decoration-color: tomato;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <h3 style="text-decoration-line: underline; text-decoration-style: solid;">Primer encabezado</h3>
+            <h3 style="text-decoration-line: underline; text-decoration-style: double;">Segundo encabezado</h3>
+            <h3 style="text-decoration-line: underline; text-decoration-style: dotted;">Tercer encabezado</h3>
+            <h3 style="text-decoration-line: underline; text-decoration-style: dashed;">Cuarto encabezado</h3>
+            <h3 style="text-decoration-line: underline; text-decoration-style: wavy;">Quinto encabezado</h3>
+            <h3 style="text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: tomato;">Sexto encabezado</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subcontainer">
+        <h2 id="txt-decoration-thickness">text-decoration-thickness</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>text-decoration-thickness</code> se usa para establecer el grosor de la línea decorativa.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p.style1 {
+                text-decoration-line: underline;
+                text-decoration-thickness: auto;
+              }
+
+              p.style2 {
+                text-decoration-line: underline;
+                text-decoration-thickness: 5px;
+              }
+
+              p.style3 {
+                text-decoration-line: underline;
+                text-decoration-thickness: 25%;
+              }
+
+              p.style4 {
+                text-decoration-line: underline;
+                text-decoration-style: double;
+                text-decoration-thickness: 5px;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <p style="text-decoration-line: underline; text-decoration-thickness: auto;">Texto con línea decorativa por defecto</p>
+            <p style="text-decoration-line: underline; text-decoration-thickness: 5px;">Texto con línea decorativa de 5px de grosor.</p>
+            <p style="text-decoration-line: underline; text-decoration-thickness: 25%;">Texto con línea decorativa de 25% de grosor.</p>
+            <p style="text-decoration-line: underline; text-decoration-style: double; text-decoration-thickness: 5px;">Texto con línea decorativa de 5px de grosor y estilo doble.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-decoration-short">text-decoration shorthand</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p><code>text-decoration</code> es una propiedad abreviada que encapsula los siguientes atributos:</p>
+        <ul>
+          <li><code>text-decoration-line</code> (requerido)</li>
+          <li><code>text-decoration-color</code> (opcional)</li>
+          <li><code>text-decoration-style</code> (opcional)</li>
+          <li><code>text-decoration-thickness</code> (opcional)</li>
+        </ul>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              h3.style1 {
+                text-decoration: underline;
+              }
+
+              h3.style2 {
+                text-decoration: underline tomato;
+              }
+
+              p.text1 {
+                text-decoration: underline tomato double;
+              }
+
+              p.text2 {
+              text-decoration: overline tomato dashed 5px;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <h3 style="text-decoration: underline;">Primer Título</h3>
+            <h3 style="text-decoration: underline tomato;">Segundo Título</h3>
+            <p style="text-decoration: underline tomato double; ">Primer párrafo.</p>
+            <p style="text-decoration: overline tomato dashed 5px;">Segundo párrafo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-transform">text-transform</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>text-transform</code> especifica el formato de letras en mayúsuculas, minúsculas o colocar mayúsculas en la primera letra de cada palabra. Para realizar estos cambios se usa las siguientes valores:</p>
+        <ul>
+          <li><code>uppercase</code> (letras mayúsculas).</li>
+          <li><code>lowercase</code> (letras minúsculas).</li>
+          <li><code>capitalize</code> (uso de mayúsculas solo en la primera letra de cada palabra).</li>
+        </ul>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p.style1 {
+                text-transform: uppercase;
+              }
+
+              p.style2 {
+                text-transform: lowercase;
+              }
+
+              p.style3 {
+                text-transform: capitalize;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <p style="text-transform: uppercase;">Este texto está transformado en mayúscula.</p>
+            <p style="text-transform: lowercase;">Este texto está transformado en minúscula.</p>
+            <p style="text-transform: capitalize;">Este texto está transformado en capitalize.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-indent">text-indent</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Esta propiedad se usa para dar sangría o identados a la primera línea de un texto.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p {
+                text-indent: 50px;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <p style="text-indent: 50px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam reprehenderit quisquam omnis hic nihil, ut iure nam architecto, ducimus dolorum earum doloremque, minus et aperiam corrupti ea cumque obcaecati tempora.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="ltr-spacing">letter-spacing</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>letter-spacing</code> realiza el espacio entre los caracteres de un texto.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p.style1 {
+                letter-spacing: 5px;
+              }
+
+              p.style1 {
+                letter-spacing: -2px;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <p style="letter-spacing: 5px;">Texto con espacio de letra de 5px.</p>
+            <p style="letter-spacing: -2px;">Texto con espacio de letra de -2px.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="line-height">line-height</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>line-height</code> es usado para especificar espacios entre líneas.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p.style1 {
+                line-height: 0.7;
+              }
+
+              p.style2 {
+                line-height: 1.8;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <p style="line-height: 0.7; border: 1px solid tomato;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur natus inventore delectus ut maiores suscipit alias, accusamus cupiditate. Facere debitis accusantium dolores nemo similique ipsam nihil, doloremque unde? Voluptas.</p>
+            <p style="line-height: 1.8; border: 1px solid tomato;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque dolorem repellendus laborum est cumque facilis recusandae dolores autem in beatae ad voluptas maxime eligendi expedita ea esse, laboriosam et!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="word-spacing">word-spacing</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>word-spacing</code> especifica el espacio entre las palabras de un texto.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p.style1 {
+                word-spacing: 20px;
+                color: tomato;
+              }
+
+              p.style2 {
+                word-spacing: -4px;
+                color: green;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p>Este es un párrafo con espaciado entre palabras normal.</p>
+        <p style="word-spacing: 20px; color: tomato;">Este es un párrafo con un espacio entre palabras más grande.</p>
+        <p style="word-spacing: -4px; color: green;">Este es un párrafo con un espacio entre palabras pequeño.</p>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="white-space">white-space</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>white-space</code> maneja los espacios en blanco dentro de un elemento.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p {
+                white-space: nowrap;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <p style="white-space: nowrap;">Este texto no se ajusta al contenedor, es lo que hace la propiedad <code>white-space</code>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="txt-shadow">text-shadow</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p><code>text-shadow</code> permite agregar sombra al texto. Se debe especificar la sombra horizontal y la sombra vertical y la unidad puede ser en <em>cm</em>, <em>px</em>, etc.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              h3.style1 {
+                text-shadow: 2px 2px;
+              }
+
+              h3.style2 {
+                text-shadow: 2px 2px lightblue;
+              }
+
+              h3.style3 {
+                text-shadow: 2px 2px;
+              }
+
+              h3.style4 {
+                text-shadow: 2px 2px 5px lightblue;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <h3 style="text-shadow: 2px 2px;">Texto sombreado - 2px horizontal y 2px vertical</h3>
+            <h3 style="text-shadow: 2px 2px var(--color-quaternary);">Texto sombreado - 2px horizontal y 2px vertical y de color celeste</h3>
+            <h3 style="text-shadow: 2px 2px 5px var(--color-quaternary);">Texto sombreado - 2px horizontal y vertical; con un blur de 5px y de color celeste</h3>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p.style1 {
+                color: white;
+                text-shadow: 2px 2px 4px black;
+              }
+
+              p.style2 {
+                color: pink;
+                text-shadow: 0 0 3px lightblue;
+              }
+
+              p.style3 {
+                color: pink;
+                text-shadow: 0 0 3px pink, 0 0 5px lightblue;
+              }
+
+              p.style3 {
+                color: lightblue;
+                text-shadow: 1px 1px 2px black,
+                                              0 0 25px lightblue,
+                                              0 0 5px pink;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Otros efectos:</p>
+        <div class="example-container">
+          <div class="wrapp">
+            <p style="background-color: var(--color-primary); color: var(--color-primary); text-shadow: 2px 2px 4px var(--color-secundary); padding: 10px;">Texto con efecto sombra!!</p>
+            <p style="background-color: var(--color-primary); color: var(--color-quinary); text-shadow: 0 0 3px var(--color-quaternary); padding: 10px;">Texto con efecto neón con sombras!</p>
+            <p style="background-color: var(--color-primary); color: var(--color-quinary); text-shadow: 0 0 3px var(--color-quinary), 0 0 5px var(--color-quaternary); padding: 10px;">¡Sombra de texto con brillo neón rosado y celeste!</p>
+            <p style="background-color: var(--color-primary); color: var(--color-quaternary); text-shadow: 1px 1px 2px var(--color-secundary), 0 0 25px var(--color-quaternary), 0 0 5px var(--color-quinary); padding: 10px;">Texto con efecto sombra!!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2>Ejercicio</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas repudiandae sit sint nam aliquam, eius necessitatibus adipisci culpa. Mollitia in deleniti suscipit adipisci quia rerum voluptatibus dicta velit est?</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Resultado:</p>
+        <div class="example-container">
+          <div class="wrapp" id="box3">
+            <div class="cont">
+              <div class="head-text">
+                <h2 class="title-box3"><span id="title-s1">C</span><span id="title-s2">S</span><span id="title-s3">S</span></h2>
+                <h3><span>Historia</span></h3>
+              </div>
+              <div class="cover">
+                <p style="text-align: left;">El CSS fue creado para trabajar en conjunto con el HTML. Y debido al concepto que utiliza (la separación de presentación y contenido), la tecnología CSS tiene un estándar muy amplio, con especificaciones, beneficios y posibilidades muy grandes.</p>
+                <p style="text-align: justify;">A pesar de que las Hojas de Estilo en Cascada no son imprescindibles, son importantes para darle forma y apariencia a tu página web. Si solo usas HTML tu página se verá desnuda y no destacará entre la competencia.</p>
+                <p style="text-align: right;">Esta especificación es un lenguaje de diseño gráfico que se escribe dentro del código HTML del sitio web y, permite crear páginas de una manera más exacta y aplicarles estilos (colores, márgenes, formas, tipos de letras, etc.) por lo que se tiene mayor control de los resultados finales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2>Seguir aprendiendo</h2>
+      </header>
+      <div class="content-container" id="example-link">
+        <div class="links-container">
+          <a class="link-theme link-left" href="./07.outline.html">Outline en CSS</a><br>
+          <a class="link-theme" href="../index.html"><i>🏠</i></a><br>
+          <a class="link-theme link-right" href="">Fuentes en CSS</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="footer-container">
+  <h4>Hecho con ❤ por BinarioAssembler &copy;</h4>
+</footer>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outline en CSS</title>
+  <link rel="stylesheet" href="../src/07outline.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header-container">
+  <div class="wrapper">
+    <h1 class="header-title">Outline en CSS</h1>
+    <p class="header-text">Outline es un contorno que se dibuja alrededor del elemento fuera de los bordes, por lo general se usa para que el elemento se destaque.</p>
+  </div>
+</header>
+<aside class="navigator">
+<div class="wrapper-aside">
+  <details>
+    <summary>+ Contenido</summary>
+    <ol>
+      <li><a href="#out-intro">Outline</a></li>
+      <li><a href="#out-style">Outline style</a></li>
+      <li><a href="#out-width">Outline width</a></li>
+      <li><a href="#out-color">Outline color</a></li>
+      <li><a href="#out-offset">Outline offset</a></li>
+      <li><a href="#out-shorthand">Outline shorthand</a></li>
+    </ol>
+  </details>
+</div>
+</aside>
+<main class="main-container">
+  <div class="wrapper">
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="out-intro">Outline (contorno)</h2>
+      </header>
+      <div class="content-container">
+        <div class="example-container">
+          <div class="wrapp" id="box1">
+            <div class="cont-outline">
+              <div class="box-outline">
+                <span>Outline</span>
+                <div class="box-border">
+                  <span>Border</span>
+                  <div class="box-content">
+                    <span>Contenido</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-subcontainer">
+        <p>Las propiedades más comunes de <code>outline</code> son las siguientes:</p>
+        <ul>
+          <li><code>outline-style</code></li>
+          <li><code>outline-color</code></li>
+          <li><code>outline-width</code></li>
+          <li><code>outline-offset</code></li>
+          <li><code>outline</code></li>
+        </ul>
+        <p><small><strong>Nota:</strong> la propiedad <code>outline</code> no forma parte de las dimensiones del elemento,
+            solo se sobrepone al contenido del elemento. Por tanto, el alto y ancho del elemento no varía.</small></p>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="out-style">Estilos para outline</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Para la propiedad <code>outline-style</code> podemos dar los siguientes estilos:</p>
+        <ul>
+          <li><code><strong>dotted:</strong></code> el contorno es punteado.</li>
+          <li><code><strong>dashed:</strong></code> el contorno es discontinuo.</li>
+          <li><code><strong>solid:</strong></code> el contorno es sólido.</li>
+          <li><code><strong>double:</strong></code> el contorno es doble.</li>
+          <li><code><strong>groove:</strong></code> el contorno es en 3D.</li>
+          <li><code><strong>ridge:</strong></code> el contorno es estriado en 3D.</li>
+          <li><code><strong>inset:</strong></code> el contorno es por dentro en 3D.</li>
+          <li><code><strong>outset:</strong></code> el contorno tiene un inicio en 3D.</li>
+          <li><code><strong>none:</strong></code> no tiene contorno.</li>
+          <li><code><strong>hidden:</strong></code> su contorno es oculto.</li>
+        </ul>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p.dotted {outline-style: dotted;}
+              p.dashed {outline-style: dashed;}
+              p.solid {outline-style: solid;}
+              p.double {outline-style: double;}
+              p.groove {outline-style: groove;}
+              p.ridge {outline-style: ridge;}
+              p.inset {outline-style: inset;}
+              p.outset {outline-style: outset;}
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp" id="box1">
+            <p class="out-style" style="outline: 4px dotted var(--color-quinary);">Contorno tipo dotted.</p>
+            <p class="out-style" style="outline: 4px dashed var(--color-quinary);">Contorno tipo dashed.</p>
+            <p class="out-style" style="outline: 4px solid var(--color-quinary);">Contorno tipo sólido.</p>
+            <p class="out-style" style="outline: 4px double var(--color-quinary);">Contorno tipo doble.</p>
+            <p class="out-style" style="outline: 4px groove var(--color-quinary);">Contorno tipo groove.</p>
+            <p class="out-style" style="outline: 4px ridge var(--color-quinary);">Contorno tipo ridge.</p>
+            <p class="out-style" style="outline: 4px inset var(--color-quinary);">Contorno tipo inset.</p>
+            <p class="out-style" style="outline: 4px outset var(--color-quinary);">Contorno tipo outset.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="out-width">Outline width</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>outline-width</code> especifica el ancho del contorno, se puede usar los siguientes valores:</p>
+        <ul>
+          <li>thin</li>
+          <li>medium</li>
+          <li>thick</li>
+          <li>Tamaño (px, pt, cm, em, etc)</li>
+        </ul>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p.ex1 {
+                border: 1px solid black;
+                outline-style: solid;
+                outline-color: red;
+                outline-width: thin;
+              }
+
+              p.ex2 {
+                border: 1px solid black;
+                outline-style: solid;
+                outline-color: red;
+                outline-width: medium;
+              }
+
+              p.ex3 {
+                border: 1px solid black;
+                outline-style: solid;
+                outline-color: red;
+                outline-width: thick;
+              }
+
+              p.ex4 {
+                border: 1px solid black;
+                outline-style: solid;
+                outline-color: red;
+                outline-width: 4px;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp" id="box1">
+            <p class="out-witdh" style="outline-width: thin;">Un contorno fino.</p>
+            <p class="out-witdh" style="outline-width: medium;">Un contorno mediano.</p>
+            <p class="out-witdh" style="outline-width: thick;">Un contorno grueso.</p>
+            <p class="out-witdh" style="outline-width: 8px;">Un contorno de 8px de grosor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="out-color">Outline color</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>outline-color</code> establece el color del contorno, su configuración es mediante los siguientes atributos:</p>
+        <ul>
+          <li><strong>nombre:</strong> especifica el nombre de color reconocido por CSS, ejemplo: <code>tomato</code>.</li>
+          <li><strong>HEX:</strong> especifica el valor hexadecimal, ejemplo: <code>#ff0022</code>.</li>
+          <li><strong>RGB:</strong> especifica el color rgb(255,10,0).</li>
+          <li><strong>HSL:</strong> especifica el color hsl(0,100%,50%).</li>
+          <li><strong>invert:</strong> invierte el color del contorno y es independiente al color de fondo.</li>
+        </ul>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p.ex1 {
+                border: 2px solid black;
+                outline-style: solid;
+                outline-color: red;
+              }
+
+              p.ex2 {
+                border: 2px solid black;
+                outline-style: dotted;
+                outline-color: blue;
+              }
+
+              p.ex3 {
+                border: 2px solid black;
+                outline-style: outset;
+                outline-color: grey;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp" id="box1">
+            <p class="out-color" style="outline: solid tomato;">Contorno sólido, color tomato.</p>
+            <p class="out-color" style="outline: dotted rgb(255,99,70);">Contorno sólido, color rgb(255,100,50).</p>
+            <p class="out-color" style="outline: outset hsl(0,100%,75%);">Contorno sólido, color hsl(300,90%,70%).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="out-offset">Outline offset</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>La propiedad <code>outline-offset</code> agrega espacio entre el contorno y el borde de un elemento, el espacio es transparente.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p {
+                margin: 30px;
+                border: 1px solid black;
+                outline: 1px solid red;
+                outline-offset: 15px;
+              }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp" id="box1">
+            <p class="out-offset">Este párrafo tiene un contorno de 20px fuera del borde.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2 id="out-shorthand">Outline shorthand (abreviado)</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Para usar la propiedad <code>outline</code> abreviada se debe considerar los siguientes valores individuales:</p>
+        <ul>
+          <li><code>outline-width</code></li>
+          <li><code>outline-style <strong>(requerido)</strong></code></li>
+          <li><code>outline-color</code></li>
+        </ul>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Input:</p>
+        <div class="example-container">
+          <div class="wrapp-snippet">
+            <pre><code>
+              p.ex1 {outline: dashed;}
+              p.ex2 {outline: dotted red;}
+              p.ex3 {outline: 5px solid yellow;}
+              p.ex4 {outline: thick ridge pink;}
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Output:</p>
+        <div class="example-container">
+          <div class="wrapp" id="box1">
+            <p class="out-short" style="outline: dashed;"> Contorno punteado.</p>
+            <p class="out-short" style="outline: dotted var(--color-quinary);"> Contorno punteado de color rosado.</p>
+            <p class="out-short" style="outline: 5px solid var(--color-quinary);"> Contorno sólido de 5px de grosor y de color rosado.</p>
+            <p class="out-short" style="outline: thick ridge var(--color-quinary);"> Contorno sólido de grosor thick y de color rosado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2>Ejercicio 1</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Crea un menú de navegación sencillo y aplícale un estilo que resalte el contorno de los botones del menú usando la propiedad <code>outline</code>. Cuando el cursor se encuentre sobre el botón se debe apreciar los estilos del contorno.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Resultado:</p>
+        <div class="example-container">
+          <div class="wrapp" id="box1">
+            <nav class="nav-container">
+              <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2>Ejercicio 2</h2>
+      </header>
+      <div class="content-subcontainer">
+        <p>Crea un contenedor en HTML y aplícale un estilo que use outline para mostrar un contorno alrededor del elemento. Además, usa la propiedad outline-offset para desplazar el contorno desde el borde.</p>
+      </div>
+      <div class="content-container">
+        <p class="content-containertext">Resultado:</p>
+        <div class="example-container">
+          <div class="wrapp" id="box2">
+            <article class="article">
+              <div class="image-article">
+                <img src="https://assets.bitdegree.org/online-learning-platforms/storage/media/2018/10/10-tips-to-learn-PHP.jpg" alt="Fondo de imágen">
+              </div>
+              <section class="text-article">
+                <h2>Novedades de PHP 8.3</h2>
+              </section>
+              <footer class="foot-article">
+                <div class="foot-img">
+                  <img src="../src/img/rc5.png" alt="Autor del post">
+                </div>
+                <p class="foot-text"><span>🙎‍♂️ Juan Astudillo</span> | <span>🗓 30/05/2024</span></p>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcontainer">
+      <header class="header-subtitle">
+        <h2>Seguir aprendiendo</h2>
+      </header>
+      <div class="content-container" id="example-link">
+        <div class="links-container">
+          <a class="link-theme link-left" href="./06.box-model.html">Box Model en CSS</a><br>
+          <a class="link-theme" href="../index.html"><i>🏠</i></a><br>
+          <a class="link-theme link-right" href="./08.text.html">Textos en CSS</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="footer-container">
+  <h4>Hecho con ❤ por BinarioAssembler &copy;</h4>
+</footer>
+</body>
+</html>
